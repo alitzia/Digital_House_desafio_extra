@@ -34,9 +34,9 @@ Los archivos de de controladores se localizan en src/controllers. Hay un archivo
 6. Probar que cada endpoint regrese los datos conforme a las especificaciones. Para ello utilicé Postman. En el archivo pruebas.pdf muestro algunas capturas de pantalla con las pruebas de los endpoints en Postman. 
 
 -- 3. DESCRIPCIÓN DE LOS ENDPOINTS --
-    /canciones (GET)
+    - /canciones (GET)
         Lista las canciones con sus propiedades.
-    /canciones (POST)
+    - /canciones (POST)
         Crear un nuevo registro de una canción. Para crearla a través de Postman, se coloca un JSON en el body. Ejemplo de los datos que se deben ingresar:
                 {
                     "titulo" : "In My Place",
@@ -45,9 +45,9 @@ Los archivos de de controladores se localizan en src/controllers. Hay un archivo
                     "album_id" : 5, 
                     "artista_id" : 3
                     }
-    /canciones/:id (GET)
+    - /canciones/:id (GET)
         Muestra una canción con base en su id. Para probarla, reemplazar ":id" por un número del 1 al 6 o del 23 al 30.
-    /canciones/:id (PUT) 
+    - /canciones/:id (PUT) 
         Edita la canción con el id ingresado. Para probarla, reemplazar ":id" por el id de la canción a modificar y colocar en el body de Postman un JSON con los nuevos datos.
     - /canciones/:id (DELETE) 
         Eliminar la canción cuyo id se proporciona en la url.
